@@ -1,4 +1,4 @@
-## practical example of combining Union (|) and Intersection (&) types in TypeScript.
+## Practical example of combining Union (|) and Intersection (&) types in TypeScript.
 
 Union types allow a value to be one of several types, while intersection types combine multiple types into a single type. In some scenarios, you may need to transform a union type into an intersection type.
 
@@ -30,7 +30,7 @@ A distributive conditional type applies a conditional type separately to each me
 
  ### Conclusion
  Mastering the transition from union types to intersection types in TypeScript unlocks a powerful tier of type-level programming.
- 
+
  - Conditional types naturally distribute over union members, allowing you to evaluate and process each type individually.
  - Leveraging function parameter positions (infer U) in a contravariant context forces TypeScript to merge the distributed union members into a single intersection type.
  - While you may not need this technique every day, it is an essential pattern for building robust utility types, managing complex component props, or handling advanced state management architectures.
