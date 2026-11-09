@@ -127,11 +127,11 @@ const validateAgeAsync = async (age: number): Promise<string> => {
 
 (async () => {
   try {
-    const sample = await validateAgeAsync(15);
-    console.log(sample);
+    const sample = await validateAgeAsync(15); 
+    return sample;
   } catch (error) {
-    if (error instanceof Error) {
-      console.log(error.message);
+    if (error instanceof Error) { 
+      return error.message
     }
   }
 })();
