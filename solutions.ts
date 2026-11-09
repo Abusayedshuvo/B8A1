@@ -43,6 +43,9 @@ const concatenateArrays = <T>(...arrays: T[][]): T[] => {
   return ([] as T[]).concat(...arrays);
 };
 
+
+
+
 interface Course {
   title: string;
   students: number;
@@ -58,6 +61,10 @@ const getPopularCourses = (
   );
 };
 
+
+
+
+
 const courses = [
   { title: "TypeScript Mastery", students: 120, isPublished: true },
   { title: "Draft Course", students: 200, isPublished: false },
@@ -68,6 +75,10 @@ const courses = [
 const pluckValues = <T, K extends keyof T>(items: T[], key: K): T[K][] => {
   return items.map((item) => item[key]);
 };
+
+
+
+
 
 const users = [
   { id: 1, name: "Rakib", role: "Admin" },
@@ -97,6 +108,9 @@ class Manager extends Employee {
     return `Manager of ${this.department} : ${this.name}`;
   }
 }
+
+
+
 
 const validateAgeAsync = async (age: number): Promise<string> => {
   return new Promise((resolve, reject) => {
